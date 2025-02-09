@@ -1,0 +1,79 @@
+@import '../../assets/scss/main.scss';
+
+.header {
+	width: 100%;
+
+	&Wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+
+		border-bottom: 1px solid transparent;
+		border-image: linear-gradient(0.25turn, #fff, #170530, #fff);
+		border-image-slice: 1;
+
+		&__logo {
+			width: 109px;
+			height: 43px;
+
+			&Img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__nav {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			column-gap: 16px;
+
+			&Avatar {
+				border-radius: 57px;
+				min-width: 35px;
+				min-height: 35px;
+				max-width: 35px;
+				max-height: 35px;
+			}
+
+			&Link {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--osnovnoy-tekst);
+			}
+
+			&Register {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 57px;
+				width: 194px;
+				height: 35px;
+				border: 1px solid #a915c8;
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--osnovnoy-tekst);
+			}
+
+			&Sign_in {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 57px;
+				width: 95px;
+				height: 35px;
+				background: linear-gradient(125deg, #a915c8 0%, #f9585e 100%);
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--1);
+			}
+		}
+	}
+}

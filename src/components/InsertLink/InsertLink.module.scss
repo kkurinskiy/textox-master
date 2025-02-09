@@ -1,0 +1,58 @@
+@import '../../assets/scss/main.scss';
+
+.insert {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 11;
+	cursor: auto;
+
+	&Block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 32px;
+		padding: 32px;
+		width: 380px;
+		border-radius: 24px;
+		background: var(--1);
+
+		&__title {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 16px;
+			color: var(--osnovnoy-tekst);
+		}
+
+		&__input {
+			border-radius: 22px;
+			padding: 16px;
+			width: 100%;
+			height: 51px;
+			border: 1px solid #a915c8;
+
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 16px;
+			color: var(--osnovnoy-tekst);
+		}
+
+		&__submit {
+			border-radius: 57px;
+			width: 182px;
+			height: 35px;
+			background: linear-gradient(125deg, #a915c8 0%, #f9585e 100%);
+
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 16px;
+			color: var(--1);
+		}
+	}
+}

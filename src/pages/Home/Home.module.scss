@@ -1,0 +1,144 @@
+@import '../../assets/scss/main.scss';
+
+.home {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	margin: 50px 0;
+
+	&Btns {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+
+		&__item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			column-gap: 16px;
+
+			&Btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 57px;
+				width: 182px;
+				height: 35px;
+
+				background: linear-gradient(125deg, #a915c8 0%, #f9585e 100%);
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--1);
+			}
+
+			&Placeholder {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--tekst1);
+			}
+
+			&Text {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				color: var(--osnovnoy-tekst);
+			}
+		}
+	}
+
+	&Form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+		align-items: end;
+
+		&__textarea {
+			border-radius: 22px;
+			padding: 24px;
+			width: 100%;
+			height: 379px;
+			resize: none;
+			border: 1px solid #a915c8;
+
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			color: var(--osnovnoy-tekst);
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		&__table {
+			width: 100%;
+			border: 1px solid var(--tekst1);
+			border-radius: 22px;
+
+			&Head {
+				&__item {
+					display: grid;
+					grid-template-columns: 26fr 22fr 19fr 19fr 34fr;
+
+					th {
+						padding: 24px 0;
+						font-family: var(--font-family);
+						font-weight: 400;
+						font-size: 18px;
+						color: var(--osnovnoy-tekst);
+						text-align: center;
+					}
+
+					&1,
+					&2,
+					&3,
+					&4 {
+						border-right: 1px solid var(--tekst1);
+					}
+				}
+			}
+
+			&Body {
+				display: flex;
+				flex-direction: column;
+
+				&__item {
+					display: grid;
+					grid-template-columns: 26fr 22fr 19fr 19fr 34fr;
+					border-top: 1px solid var(--tekst1);
+
+					td {
+						padding: 24px 0;
+						font-family: var(--font-family);
+						font-weight: 400;
+						font-size: 18px;
+						color: var(--osnovnoy-tekst);
+						text-align: center;
+					}
+
+					&1,
+					&2,
+					&3,
+					&4 {
+						border-right: 1px solid var(--tekst1);
+					}
+				}
+			}
+		}
+
+		&__submit {
+			border-radius: 57px;
+			width: 182px;
+			height: 35px;
+			background: linear-gradient(125deg, #a915c8 0%, #f9585e 100%);
+
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 16px;
+			color: var(--1);
+		}
+	}
+}

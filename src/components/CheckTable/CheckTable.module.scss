@@ -1,0 +1,85 @@
+@import '../../assets/scss/main.scss';
+
+.table {
+	width: 100%;
+	border: 1px solid var(--tekst1);
+	border-radius: 22px;
+
+	&Head {
+		&__item {
+			display: grid;
+			grid-template-columns: 26fr 22fr 19fr 19fr 34fr 22fr;
+
+			th {
+				padding: 24px 0;
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				color: var(--osnovnoy-tekst);
+				text-align: center;
+			}
+
+			&1,
+			&2,
+			&3,
+			&4,
+			&5 {
+				border-right: 1px solid var(--tekst1);
+			}
+		}
+	}
+
+	&Body {
+		display: flex;
+		flex-direction: column;
+
+		&__item {
+			display: grid;
+			grid-template-columns: 26fr 22fr 19fr 19fr 34fr 22fr;
+			border-top: 1px solid var(--tekst1);
+
+			td {
+				padding: 24px 0;
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				color: var(--osnovnoy-tekst);
+				text-align: center;
+			}
+
+			&1 {
+				padding: 0 !important;
+				position: relative;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
+
+				&::after {
+					content: '';
+					text-align: right;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					height: 2em;
+					background: linear-gradient(
+						to bottom,
+						rgba(255, 255, 255, 0),
+						white 100%
+					);
+					pointer-events: none;
+				}
+			}
+
+			&1,
+			&2,
+			&3,
+			&4,
+			&5 {
+				border-right: 1px solid var(--tekst1);
+			}
+		}
+	}
+}

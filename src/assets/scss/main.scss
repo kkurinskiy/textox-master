@@ -1,0 +1,34 @@
+@import './reset';
+@import './fonts';
+
+html {
+	width: 100%;
+	height: 100vh;
+
+	--font-family: 'TT Hoves', sans-serif;
+	--tekst1: #787878;
+	--osnovnoy-tekst: #272727;
+	--oshibka: rgba(255, 0, 0, 0.84);
+	--1: #fff;
+}
+
+.auth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	width: 100%;
+}
